@@ -1,14 +1,10 @@
-import time
 import os
 import json
-import base64
 import asyncio
-import websockets # Not directly used for FastAPI, but good to keep if external websocket clients are expected.
 from fastapi import FastAPI, WebSocket, Request
-from fastapi.responses import HTMLResponse, Response # Import Response
+from fastapi.responses import HTMLResponse, Response
 from fastapi.websockets import WebSocketDisconnect
 from twilio.rest import Client
-from twilio.twiml.voice_response import VoiceResponse, Connect, Stream, Say # Import Stream and Say
 from dotenv import load_dotenv
 import google.generativeai as genai
 
