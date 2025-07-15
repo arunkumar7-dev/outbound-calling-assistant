@@ -7,6 +7,7 @@ from fastapi.websockets import WebSocketDisconnect
 from twilio.rest import Client
 from dotenv import load_dotenv
 import google.generativeai as genai
+import uvicorn
 
 load_dotenv()
 
@@ -152,8 +153,7 @@ async def websocket_endpoint(websocket: WebSocket):
             print(f"Cleared session for call {call_sid}")
 
 if __name__ == "__main__":
-    import uvicorn
-
+    
     print(f"Twilio Media Stream Server starting on port {PORT}...")
     print(f"Ensure your NGROK_URL is set to {NGROK_URL}")
     print(f"Twilio TwiML Endpoint: {NGROK_URL}/twiml")
