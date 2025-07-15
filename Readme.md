@@ -24,32 +24,26 @@ An AI-powered outbound calling assistant built using **Twilio**, **Google Gemini
 
 
 🛠️ How to Run
+Start ngrok
+Open a terminal and run:
 
-- Start ngrok
-  Open a terminal and run:
-  ngrok http 5050
+  bash :- 
 
-- Update .env file
-  Get your Google API Key from Google AI Studio: https://aistudio.google.com/app/apikey
-  GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY_HERE"
+ngrok http 5050
+Update .env file (pls check dummy .env file for refrence)
 
-  Your ngrok public URL (without https://)
-  NGROK_URL="xxxxxxxx.ngrok-free.app"
+Copy the HTTPS URL from ngrok (e.g., https://abc123.ngrok.io) and paste it into your .env file:
 
-  https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1
-  TWILIO_ACCOUNT_SID="ACe9cb6*****************"
+Run the App :- 
+In another terminal, start the FastAPI server:
 
-  Twilio auth token       
-  TWILIO_AUTH_TOKEN="028510dc946***************"
+bash
+Copy
+Edit
 
-  https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1                         
-  TWILIO_PHONE_NUMBER=+180******
+  - python main.py
+    Initiate the Call
+    
+    "Enter your phone number in the terminal when prompted. The assistant will place a call and interact in real-time."
 
-  Your Port                         
-  PORT=5050
 
-- Run The App
-- python main.py
-
-- Initiate the Call
-Enter your phone number in the terminal when prompted. The assistant will place a call and interact in real-time.
