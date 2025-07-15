@@ -37,12 +37,9 @@ Copy the HTTPS URL from ngrok (e.g., https://abc123.ngrok.io) and paste it into 
 Run the App :- 
 In another terminal, start the FastAPI server:
 
-bash
-Copy
-Edit
+Terminal :-
 
   - python main.py
-    Initiate the Call
     
     "Enter your phone number in the terminal when prompted. The assistant will place a call and interact in real-time."
 
