@@ -34,9 +34,6 @@ Update .env file (pls check dummy .env file for refrence)
 
 Copy the HTTPS URL from ngrok (e.g., https://abc123.ngrok.io) and paste it into your .env file:
 
-Run the App :- 
-In another terminal, start the FastAPI server:
-
 Terminal :-
 
   - python main.py
